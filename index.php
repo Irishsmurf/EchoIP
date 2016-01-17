@@ -2,12 +2,17 @@
 
 $ip = getenv('REMOTE_ADDR');
 
-if(isset($_GET['json']))
-{
-	$data = array("ip" => $ip);
-	echo json_encode($data);
-} else
-{
-	echo $ip; 
+function getIP($query, $json) {
+	if($json)
+	{
+		$data = array("ip" => $query);
+		return json_encode($data);
+	} else
+	{
+		return $query;
+	}
 }
+
+echo getIP($ip, isset($_GET['json']));
+
 ?>
