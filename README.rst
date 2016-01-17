@@ -1,6 +1,6 @@
 EchoIP - Echo your IP
 =======================================
-.. image:: https://travis-ci.org/irishsmurf/EchoIP.svg
+.. image:: https://api.travis-ci.org/Irishsmurf/EchoIP.svg
    :alt: build status
    :target: https://travis-ci.org/irishsmurf/EchoIP
 ---------------------------------------------------------------------------------
